@@ -28,4 +28,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
+          context: "{{defaultContext}}:client"
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/quete1902:latest
